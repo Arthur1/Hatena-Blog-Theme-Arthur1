@@ -1,12 +1,24 @@
 // Variables
 
 // Font
-$font-family-base: 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Kaku Gothic Pro', 'Meiryo', 'MS PGothic';
-$font-family-monospace: 'Monaco', 'Consolas', 'Courier New', Courier, monospace, sans-serif;
+$font-family-base: "BIZ UDPGothic", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+$font-family-monospace: "Monaco", "Consolas", "Courier New", Courier, monospace,
+  sans-serif;
+
+// monokai color
+$mk-pink: #f92672;
+$mk-green: #a6e22e;
+$mk-orange: #fd971f;
+$mk-blue: #66d9ef;
+$mk-purple: #ae81ff;
+$mk-yellow: #e6db74;
+$mk-gray: #75715e;
+$mk-darkgray: #272822;
+$mk-white: #f8f8f2;
 
 // Background color
-$background: #fff;
-$bg-light: #f5f5f5;
+$background: $mk-white;
+$bg-light: darken($mk-white, 10%);
 
 // text color
 $text: #454545;
@@ -14,7 +26,7 @@ $text-light: #999;
 $text-header: #333;
 
 // link
-$link: #1487bd;
+$link: darken($mk-blue, 30%);
 $hover: darken($link, 10%);
 
 // border

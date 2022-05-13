@@ -1,7 +1,7 @@
 @charset "utf-8";
 /*
-  Theme: boilerplate
-  Author: Hatena Blog Team
+  Theme: boilerplate_arthur-1
+  Author: arthur-1, Hatena Blog Team
   Responsive: yes
   Description:
     はてなブログのデザインCSSカスタマイズの土台に適したデザインテーマです。
@@ -14,10 +14,9 @@
 */
 
 // import normalize
-@import "node_modules/normalize.css/normalize";
-
-// import variable
-@import "lib/_variable";
+@use "../node_modules/normalize.css/normalize.css";
 
 // import core
-@import "lib/_core";
+@use "lib/_core";
+
+@use "lib/_edit";

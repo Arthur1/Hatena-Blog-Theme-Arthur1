@@ -1,3 +1,9 @@
+@use "variable" as *;
+
+:root {
+    font-size: 20px;
+}
+
 html,
 body {
     font-family: $font-family-base;
@@ -51,6 +57,9 @@ h1,h2,h3,h4,h5,h6 {
     @media #{$mq-md} {
         width: 940px;
     }
+    @media #{$mq-lg} {
+        width: 1160px;
+    }
 }
 
 /* 2カラムレイアウト */
@@ -68,6 +77,9 @@ h1,h2,h3,h4,h5,h6 {
     }
     @media #{$mq-md} {
         width: 600px;
+    }
+    @media #{$mq-lg} {
+        width: 820px;
     }
 }
 #box2 {

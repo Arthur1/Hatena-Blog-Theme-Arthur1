@@ -1,0 +1,46 @@
+@use "variable" as *;
+
+.entry-title::before, .entry-title h1::before {
+  content: "#";
+  margin-right: 0.5em;
+  color: lighten($mk-pink, 20%);
+  font-family: $font-family-monospace;
+}
+.entry-content h2::before {
+  content: "##";
+  margin-right: 0.5em;
+  color: lighten($mk-orange, 20%);
+  font-family: $font-family-monospace;
+}
+.entry-content h3::before {
+  content: "###";
+  margin-right: 0.5em;
+  color: lighten($mk-green, 20%);
+  font-family: $font-family-monospace;
+}
+
+.entry-content pre.code {
+  background-color: $mk-darkgray;
+  color: $mk-white;
+}
+.synComment {
+  color: $mk-gray;
+}
+.synSpecial {
+  color: $mk-yellow;
+}
+.synType {
+  color: $mk-blue;
+}
+.synPreProc {
+  color: $mk-pink;
+}
+.synStatement {
+  color: $mk-pink;
+}
+.synIdentifier {
+  color: $mk-white;
+}
+.synConstant {
+  color: $mk-purple;
+}
