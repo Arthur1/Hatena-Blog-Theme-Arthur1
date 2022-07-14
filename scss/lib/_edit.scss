@@ -1,5 +1,6 @@
 @use "variable" as *;
 
+// headline
 .entry-title::before, .entry-title h1::before {
   content: "#";
   margin-right: 0.5em;
@@ -19,6 +20,31 @@
   font-family: $font-family-monospace;
 }
 
+// category
+.entry-category-link {
+  display: inline-block;
+  color: darken($mk-purple, 10%);
+  border: 2px solid darken($mk-purple, 10%);
+  padding: 0.15rem 0.3rem;
+  line-height: 1.5;
+  text-decoration: none;
+  border-radius: 0.2rem;
+  user-select: none;
+
+  &:hover {
+    color: $mk-white;
+    background-color: darken($mk-purple, 10%);
+  }
+}
+
+// profile
+.profile-description {
+  font-size: .8rem;
+  line-height: 1.5;
+  clear: both;
+}
+
+// code block
 .entry-content pre.code {
   background-color: $mk-darkgray;
   color: $mk-white;
@@ -44,3 +70,4 @@
 .synConstant {
   color: $mk-purple;
 }
+

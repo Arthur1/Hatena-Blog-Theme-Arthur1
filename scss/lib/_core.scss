@@ -9,7 +9,8 @@ body {
     font-family: $font-family-base;
     color: $text;
     background-color: $background;
-    line-height: 1.6;
+    line-height: 1.8;
+    letter-spacing: .01em;
 }
 a {
     color: $link;
